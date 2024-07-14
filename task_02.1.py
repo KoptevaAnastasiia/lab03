@@ -34,7 +34,19 @@ def plot_users(U):
 
 plot_users(U)
 
+V = Vt.T
 
-print("U:\n", U)
-print("Sigma:\n", sigma)
-print("Vt:\n", Vt)
+def plot_movies(V):
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    ax.scatter(V[:, 0], V[:, 1], V[:, 2])
+
+    plt.show()
+
+plot_movies(V)
+
+
+print("U:\n\n", U, "\n")
+print("Sigma:\n\n", sigma, "\n")
+print("Vt:\n\n", Vt, "\n")
+print("V:\n\n", V)
