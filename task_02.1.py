@@ -6,7 +6,7 @@ from scipy.sparse.linalg import svds
 
 
 # Зчитування CSV файлу
-file_path = 'ratings.csv'
+file_path = 'tables/ratings.csv'
 df = pd.read_csv(file_path)
 
 ratings_matrix = df.pivot(index='userId', columns='movieId', values='rating')

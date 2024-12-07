@@ -3,8 +3,8 @@ import numpy as np
 from scipy.sparse.linalg import svds
 
 
-ratings_df = pd.read_csv('ratings.csv')
-movies_df = pd.read_csv('movies.csv')
+ratings_df = pd.read_csv('tables/ratings.csv')
+movies_df = pd.read_csv('tables/movies.csv')
 
 
 ratings_matrix = ratings_df.pivot(index='userId', columns='movieId', values='rating')
